@@ -1,0 +1,172 @@
+{
+    "cSpell.userWords": [
+        "paren",
+        "parens",
+        "uehlein"
+    ],
+    "cSpell.languageSettings": [],
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true
+    },
+    "editor.fontLigatures": false,
+    "editor.formatOnPaste": false,
+    "editor.insertSpaces": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [
+        80,
+        100
+    ],
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 2,
+    "editor.trimAutoWhitespace": false,
+
+    "eslint.options": {
+        "overrideConfig": {
+            "env": {
+                "browser": true,
+                "node": true
+              },
+            "extends": "eslint:recommended",
+            "parserOptions": {
+                "ecmaFeatures": { "jsx": true },
+                "ecmaVersion": "latest",
+                "sourceType": "module"
+            },
+            "rules": {
+                "array-bracket-spacing": "warn",
+                "arrow-parens": ["warn", "always"],
+                "arrow-spacing": "warn",
+                "block-spacing": ["warn", "always"],
+                "comma-dangle": ["warn", "always-multiline"],
+                "comma-spacing": "warn",
+                "default-case": "error",
+                "eol-last": "warn",
+                "function-paren-newline": ["warn", "consistent"],
+                "indent": ["warn", 2, { "SwitchCase": 1 }],
+                "key-spacing": "warn",
+                "keyword-spacing": "warn",
+                "max-len": ["warn", {
+                    "code": 100,
+                    "ignoreRegExpLiterals": true,
+                    "ignoreStrings": true,
+                    "ignoreTemplateLiterals": true,
+                    "ignoreUrls": true
+                }],
+                "no-bitwise": "warn",
+                "no-case-declarations": "error",
+                "no-confusing-arrow": ["warn", { "allowParens": true }],
+                "no-constant-condition": "warn",
+                "no-empty": "warn",
+                "no-mixed-operators": "error",
+                "no-multi-spaces": "warn",
+                "no-multiple-empty-lines": ["warn", { "max": 2 }],
+                "no-param-reassign": "error",
+                "no-shadow": "error",
+                "no-shadow-restricted-names": "error",
+                "no-unused-expressions": "error",
+                "no-unused-vars": "warn",
+                "object-curly-spacing": ["warn", "always"],
+                "padded-blocks": ["warn", "never"],
+                "semi": "warn",
+                "semi-spacing": "warn",
+                "sort-imports": "warn",
+                "sort-keys": [
+                    "warn",
+                    "asc",
+                    {
+                        "caseSensitive": false,
+                        "natural": false
+                    }
+                ],
+                "space-before-blocks": "warn",
+                "space-before-function-paren": ["warn", "never"],
+                "space-in-parens": "warn",
+                "space-infix-ops": "warn",
+                "space-unary-ops": [
+                    1, {
+                      "words": true,
+                      "nonwords": false
+                }],
+                "spaced-comment": "warn"
+            }
+        }
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "typescript",
+        "typescriptreact"
+    ],
+
+    "files.associations": {
+        ".gitignore": "shellscript",
+        ".jsx": "javascriptreact",
+        ".tsx": "typescriptreact"
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false
+    },
+    "gitlens.keymap": "chorded",
+
+    "javascript.updateImportsOnFileMove.enabled": "prompt",
+
+    "rust-analyzer.cargo.buildScripts.overrideCommand": null,
+
+    "search.exclude": {
+        "**/build": true,
+        "**/dist": true,
+        "**/.git": true,
+        "**/.gitignore": true,
+        "**/package.lock": true,
+        "**/tmp": true,
+        "**/.vscode": false
+    },
+
+    "telemetry.telemetryLevel": "off",
+
+    "typescript.updateImportsOnFileMove.enabled": "prompt",
+
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "window.zoomLevel": 0,
+
+    "[javascript, javascriptreact, typescript, typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.tabSize": 2
+    },
+
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.tabSize": 2
+    },
+
+    "[rust]": {
+        "editor.defaultFormatter": "matklad.rust-analyzer",
+        "editor.tabSize": 4
+    },
+
+    "[toml]": {
+        "editor.tabSize": 4
+    },
+
+    "[md, txt]": {
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "other": "off",
+            "strings": "off"
+        },
+        "files.trimTrailingWhitespace": false
+    }
+}
